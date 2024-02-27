@@ -1,5 +1,7 @@
 package com.kacperchm.thequizapp;
 
+import android.util.Log;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
@@ -35,7 +37,7 @@ public class QuizRepository {
 
             @Override
             public void onFailure(Call<QuestionList> call, Throwable t) {
-
+                throw new RuntimeException("czas minal");
             }
         });
 
